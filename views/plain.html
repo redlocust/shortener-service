@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>URL shortener home page</title>
+</head>
+<body>
+
+
+<h1>Redlocust API Basejump: URL Shortener Microservice</h1>
+
+<p>User stories:
+
+  I can pass a URL as a parameter and I will receive a shortened URL in the JSON
+  response.
+
+  When I visit that shortened URL, it will redirect me to my original link.
+</p>
+
+<p>Example creation usage:<br>
+  http://shortener-service-redlocust.c9users.io:8080/new/https://www.google.com<br>
+  http://shortener-service-redlocust.c9users.io:8080/new/http://foo.com:80
+</p>
+
+<p>Example creation output<br>
+  { "original_url":"http://foo.com:80",<br>
+  "short_url":"http://shortener-service-redlocust.c9users.io:8080/8170" }
+</p>
+
+<p>
+  Usage: <br>
+  http://shortener-service-redlocust.c9users.io:8080/2871 <br>
+  Will redirect to: <br>
+  https://www.google.com/</p>
+
+
+</body>
+</html>
